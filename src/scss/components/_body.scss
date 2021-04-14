@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 1fr 3fr 1fr;
+}
