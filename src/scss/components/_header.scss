@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+header {
+    width: 100vw;
+    height: 12vh;
+    background-color: $light-primary;
+}
+
+nav {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigation__item {
+    width: 21vw;
+    height: 3vh;
+    background-color: $light-primary;
+    border-radius: 10px;
+    transition: 100ms;
+}
+
+.navigation--modify--perfil {
+    width: 15vw;
+    height: 9vh;
+    background-image: url("https://i.pinimg.com/564x/1f/36/8c/1f368c881bccf9e10acb6c5937595969.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navigation__item:active {
+    box-shadow: 0px 0px 10px $accent;
+    border: 1px solid $accent;
+}
