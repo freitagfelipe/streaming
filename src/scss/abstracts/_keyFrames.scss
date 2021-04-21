@@ -1,4 +1,4 @@
-@keyframes slide_open {
+@keyframes slide_open_right_to_left {
     from {
         transform: translateX(100%);
     }
@@ -8,12 +8,32 @@
     }
 }
 
-@keyframes slide_close {
+@keyframes slide_open_left_to_right {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide_close_left_to_right {
     from {
         transform: translateX(0);
     }
 
     to {
         transform: translateX(100%);
+    }
+}
+
+@keyframes slide_close_right_to_left {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
     }
 }
