@@ -11,11 +11,29 @@
     <header class="header">
         <nav class="header__nav">
             <button class="header__button header__button--perfil"></button>
-            <button class="header__button">My List</button>
-            <button class="header__button">Seasonal</button>
-            <button class="header__button">Categories</button>
+            <button class="header__button header__button--myList">My List</button>
+            <button class="header__button header__button--seasonal">Seasonal</button>
+            <button class="header__button header__button--categories">Categories</button>
         </nav>
     </header>
+
+    <aside class="perfil_menu">
+        <div class="perfil_menu__tittle__container">
+            <span class="perfil_menu__tittle">Perfil</span>
+            <i class="perfil_menu__close_icon fas fa-times"></i>
+        </div>
+        
+        <figure class="perfil_menu__image__container">
+            <div class="perfil_menu__image"></div>
+            <figcaption class="perfil_menu__userName">Killua</figcaption>
+        </figure>
+
+        <div class="perfil_menu__buttons__container">
+            <button class="perfil_menu__button">Edit profile<i class="fas fa-angle-right perfil_menu__button__angle"></i></button>
+            <button class="perfil_menu__button">Friends<i class="fas fa-angle-right perfil_menu__button__angle"></i></button>
+            <button class="perfil_menu__button">History<i class="fas fa-angle-right perfil_menu__button__angle"></i></button>
+        </div>
+    </aside>
   
     <footer class="footer">
         <nav class="footer__nav">
