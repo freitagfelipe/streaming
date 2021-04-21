@@ -25,12 +25,15 @@
         font-weight: 600;
     }
 
-    &__close_icon {
+    &__close_icon_container {
         font-size: 2em;
-        cursor: pointer;
         transition: .1s;
-        border-radius: 5px;
-        padding: 1px 3px;
+        display: grid;
+        place-items: center;
+        width: 1.1em;
+        height: 1.1em;
+        border-radius: 0.5rem;
+        transition: .1s;
 
         &:active {
             background-color: $accent;
@@ -74,33 +77,37 @@
     }
 
     &__button {
-        display: flex;
-        width: 100%;
-        padding: 10px;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $dark-primary;
-        font-size: 1.2em;
-        border-radius: 5px;
+        padding: 1rem 0.5rem;
         transition: .2s;
-
-        &__angle {
-            padding: 5px 10px;
-            background-color: $light-primary;
-            border: 1px solid $light-primary;
-            border-radius: 10px;
-            transition: .1s;
-            box-shadow: 0px 0px 10px $light-primary;
-        }
+        background: none;
+        border: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.2em;
 
         &:active {
             color: $accent;
 
-            & i {
+            .perfil_menu__icon_container {
                 background-color: $accent;
                 border: 1px solid $accent;
                 box-shadow: 0px 0px 10px $accent;
             }
         }
+    }
+
+    &__icon_container {
+        display: grid;
+        place-items: center;
+        width: 2.2rem;
+        height: 2.2rem;
+        background-color: $light-primary;
+        border: 1px solid $light-primary;
+        border-radius: 0.5rem;
+        transition: .1s;
+        box-shadow: 0px 0px 10px $light-primary;
+        font-size: 1em;
     }
 }
