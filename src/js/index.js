@@ -1,1 +1,3 @@
 import "@fortawesome/fontawesome-free/css/all.css";
+import "./handlers/header";
+import "./handlers/perfil_menu";
