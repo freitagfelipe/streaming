@@ -6,9 +6,9 @@ closeButton.addEventListener("click", event => {
 });
 
 export function displayAsideMenu() {
-    asideMenu.style.animation = "slide_open .4s ease-in-out forwards";
+    asideMenu.style.animation = "slide_open_right_to_left .4s ease-in-out forwards";
 }
 
 function closeAsideMenu() {
-    asideMenu.style.animation = "slide_close .4s ease-in-out forwards";
+    asideMenu.style.animation = "slide_close_left_to_right .4s ease-in-out forwards";
 }

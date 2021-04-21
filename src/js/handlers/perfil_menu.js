@@ -6,9 +6,9 @@ closeMenu.addEventListener("click", event => {
 });
 
 export function displayPerfilMenu() {
-    perfilMenu.style.animation = "slide_open .4s ease-in-out forwards";
+    perfilMenu.style.animation = "slide_open_left_to_right .4s ease-in-out forwards";
 }
 
 function closePerfilMenu() {
-    perfilMenu.style.animation = "slide_close .4s ease-in-out forwards";
+    perfilMenu.style.animation = "slide_close_right_to_left .4s ease-in-out forwards";
 }
