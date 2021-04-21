@@ -11,19 +11,51 @@
     <header class="header">
         <nav class="header__nav">
             <button class="header__button header__button--perfil"></button>
-            <button class="header__button">My List</button>
-            <button class="header__button">Seasonal</button>
-            <button class="header__button">Categories</button>
+            <button class="header__button header__button--myList">My List</button>
+            <button class="header__button header__button--seasonal">Seasonal</button>
+            <button class="header__button header__button--categories">Categories</button>
         </nav>
     </header>
+
+    <aside class="perfil_menu">
+        <div class="perfil_menu__tittle__container">
+            <span class="perfil_menu__tittle">Perfil</span>
+            <i class="perfil_menu__close_icon fas fa-times"></i>
+        </div>
+        
+        <figure class="perfil_menu__image__container">
+            <div class="perfil_menu__image"></div>
+            <figcaption class="perfil_menu__userName">Killua</figcaption>
+        </figure>
+
+        <ul class="perfil_menu__buttons__container">
+            <button class="perfil_menu__button">Edit profile<i class="fas fa-angle-right perfil_menu__button__angle"></i></button>
+            <button class="perfil_menu__button">Friends<i class="fas fa-angle-right perfil_menu__button__angle"></i></button>
+            <button class="perfil_menu__button">History<i class="fas fa-angle-right perfil_menu__button__angle"></i></button>
+        </ul>
+    </aside>
   
     <footer class="footer">
         <nav class="footer__nav">
-            <a class="footer__button footer__button--home" href="#"><i class="fas fa-home"></i></a>
-            <a class="footer__button footer__button--search" href="#"><i class="fas fa-search"></i></a>
-            <a class="footer__button footer__button--bars" href="#"><i class="fas fa-bars"></i></a>
+            <button class="footer__button footer__button--home" href="#"><i class="fas fa-home"></i></button>
+            <button class="footer__button footer__button--search" href="#"><i class="fas fa-search"></i></button>
+            <button class="footer__button footer__button--bars" href="#"><i class="fas fa-bars"></i></button>
         </nav>
     </footer>
+  
+  <aside class="side_menu">
+        <div class="side_menu__title_container">
+            <span class="side_menu__title">Settings</span>
+            <i class="side_menu__close_icon fas fa-times"></i>
+        </div>
+        <ul class="side_menu__list">
+            <li class="side_menu__item">placeholder</li>
+            <li class="side_menu__item">placeholder</li>
+            <li class="side_menu__item">placeholder</li>
+            <li class="side_menu__item">placeholder</li>
+        </ul>
+    </aside>
+  
     <script src="../src/js/index.js"></script>
 </body>
 </html>
