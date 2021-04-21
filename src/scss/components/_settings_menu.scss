@@ -1,0 +1,83 @@
+@use "../abstracts/" as *;
+
+.settings_menu {
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background-color: $dark-primary;
+    top: 0;
+    left: 0;
+    padding: 1.2rem;
+    transform: translateX(100%);
+
+    &__title_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    &__icon_title_container {
+        font-size: 2em;
+        transition: .1s;
+        display: grid;
+        place-items: center;
+        width: 1.1em;
+        height: 1.1em;
+        border-radius: 0.5rem;
+        margin-right: 0.3rem;
+        background: none;
+        border: none;
+
+        &:active {
+            background-color: $accent;
+            border: 1px solid $accent;
+            box-shadow: 0px 0px 10px $accent;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        margin-top: 5rem;
+    }
+
+    &__item {
+        padding: 1rem 0.5rem;
+        transition: .1s;
+        background: none;
+        border: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.2em;
+
+        &:active {
+            color: $accent;
+
+            .settings_menu__icon_container {
+                background-color: $accent;
+                border: 1px solid $accent;
+                box-shadow: 0px 0px 10px $accent;
+            }
+        }
+    }
+
+    &__icon_container {
+        display: grid;
+        place-items: center;
+        width: 2.2rem;
+        height: 2.2rem;
+        background-color: $light-primary;
+        border: 1px solid $light-primary;
+        border-radius: 0.5rem;
+        transition: .1s;
+        box-shadow: 0px 0px 10px $light-primary;
+        font-size: 1em;
+    }
+}
