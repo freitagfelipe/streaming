@@ -1,5 +1,12 @@
+import { displaySettingsMenu } from "./settings_menu";
+
 const perfilMenu = document.querySelector(".perfil_menu");
 const closeMenu = document.querySelector(".perfil_menu__close_icon");
+const settingsButton = document.querySelector(".perfil_menu__button--settings");
+
+settingsButton.addEventListener("click", event => {
+    displaySettingsMenu();
+});
 
 closeMenu.addEventListener("click", event => {
     closePerfilMenu();
