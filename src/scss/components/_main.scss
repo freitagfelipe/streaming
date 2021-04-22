@@ -1,0 +1,13 @@
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
