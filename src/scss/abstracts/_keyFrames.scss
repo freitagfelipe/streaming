@@ -57,3 +57,13 @@
         transform: translateY(0%);
     }
 }
+
+@keyframes slide_close_up_to_down {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
