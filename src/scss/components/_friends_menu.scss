@@ -21,6 +21,10 @@
     &__title {
         font-size: 2em;
         font-weight: 600;
+
+        &_icon {
+            margin-right: 1rem;
+        }
     }
 
     &__icon_title_container {
