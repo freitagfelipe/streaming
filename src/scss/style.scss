@@ -1,6 +1,16 @@
 @use "./components/reset";
+@use "./components/body";
 @use "./components/general";
 @use "./components/header";
+@use "./components/home";
+@use "./components/myList";
+@use "./components/seasonal";
+@use "./components/categories";
+@use "./components/main";
 @use "./components/perfil_menu";
-@use "./components/footer";
+@use "./components/edit_profile_menu";
+@use "./components/friends_menu";
+@use "./components/history_menu";
 @use "./components/settings_menu";
+@use "./components/search";
+@use "./components/footer";

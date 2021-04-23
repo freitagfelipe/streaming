@@ -3,41 +3,29 @@
 .header {
     width: 100vw;
     background-color: transparent;
-}
+    grid-area: header;
 
-.header__nav {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-}
+    &__nav {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }
 
-.header__button {
-    background-color: transparent;
-    border-radius: 10px;
-    transition: 100ms;
-    border: 1px solid transparent;
-    font-size: 1em;
-    font-weight: 500;
-    padding: 0.1rem 0.2rem;
-    transition: 0.2s;
-}
+    &__button {
+        background-color: transparent;
+        border-radius: 10px;
+        transition: 100ms;
+        border: 1px solid transparent;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 0.1rem 0.2rem;
+        transition: 0.2s;
+        width: 10ch;
 
-.header__button--perfil {
-    width: 3rem;
-    height: 3rem;
-    background-image: url("https://i.pinimg.com/564x/1f/36/8c/1f368c881bccf9e10acb6c5937595969.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 1px;
-}
-
-.header__button:active {
-    box-shadow: 0px 0px 10px $accent;
-    border: 1px solid $accent;
-}
-
-.header__button:hover {
-    color: $accent;
+        &:hover {
+            color: $accent;
+        }
+    }
 }

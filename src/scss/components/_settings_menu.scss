@@ -1,15 +1,16 @@
 @use "../abstracts/" as *;
 
 .settings_menu {
+    display: none;
     position: fixed;
-    z-index: 10;
+    z-index: 15;
     height: 100%;
     width: 100%;
     background-color: $dark-primary;
     top: 0;
     left: 0;
     padding: 1.2rem;
-    transform: translateX(100%);
+    transform: translateX(-100%);
 
     &__title_container {
         display: flex;
@@ -20,6 +21,10 @@
     &__title {
         font-size: 2em;
         font-weight: 600;
+
+        &_icon {
+            margin-right: 1rem;
+        }
     }
 
     &__icon_title_container {
@@ -30,7 +35,6 @@
         width: 1.1em;
         height: 1.1em;
         border-radius: 0.5rem;
-        margin-right: 0.3rem;
         background: none;
         border: none;
 

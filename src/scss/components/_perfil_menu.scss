@@ -11,18 +11,22 @@
     background-color: $dark-primary;
     transform: translateX(-100%);
     padding: 1.2rem;
-    z-index: 10;
+    z-index: 15;
 
-    &__tittle__container {
+    &__title__container {
             display: flex;
             grid-row: 1 / 2;
             justify-content: space-between;
             align-items: center;
         }
 
-    &__tittle {
+    &__title {
         font-size: 2em;
         font-weight: 600;
+
+        &_icon {
+            margin-right: 1rem;
+        }
     }
 
     &__close_icon_container {
@@ -55,14 +59,15 @@
         background-image: url(https://i.pinimg.com/564x/1f/36/8c/1f368c881bccf9e10acb6c5937595969.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 45%;
-        height: 55%;
-        border-radius: 5px;
-        margin-bottom: 5px;
+        width: 40vmin;
+        height: 40vmin;
+        border-radius: 1rem;
+        margin: 10vmin 0 5vmin 0;
     }
 
     &__userName {
         font-size: 1.3em;
+        margin-bottom: 10vmin;
     }
 
     &__buttons__container {
