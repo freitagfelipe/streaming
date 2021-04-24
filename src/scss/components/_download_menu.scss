@@ -1,0 +1,51 @@
+@use "../abstracts/" as *;
+
+.download_menu {
+    display: none;
+    position: fixed;
+    z-index: 15;
+    height: 100%;
+    width: 100%;
+    background-color: $dark-primary;
+    top: 0;
+    left: 0;
+    padding: 1.2rem;
+    transform: translateX(-100%);
+
+    &__title_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 600;
+
+        &_icon {
+            margin-right: 0.5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__icon_title_container {
+        font-size: 2em;
+        transition: .1s;
+        display: grid;
+        place-items: center;
+        width: 1.1em;
+        height: 1.1em;
+        border-radius: 0.5rem;
+        background: none;
+        border: none;
+
+        &:active {
+            background-color: $accent;
+            border: 1px solid $accent;
+            box-shadow: 0px 0px 10px $accent;
+        }
+    }
+}
