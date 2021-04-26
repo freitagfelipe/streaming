@@ -10,7 +10,7 @@
     z-index: 10;
     grid-template-areas: "search-bar" "results" "close-bar";
     grid-template-rows: 4rem auto 4rem;
-    padding: 2rem 1rem 0.5rem 1rem;
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
     display: none;
 
     &__input_container {
@@ -18,7 +18,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 2rem;
+        padding: 0 1rem;
         position: relative;
     }
 
@@ -31,7 +31,7 @@
 
         &_icon {
             position: absolute;
-            left: 3rem;
+            left: 2rem;
             margin-bottom: 0.2rem;
             pointer-events: none;
         }
@@ -47,6 +47,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     &__close_bar {
