@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 
-.friends_menu {
+.preferences_menu {
     display: none;
     position: fixed;
     z-index: 15;
@@ -45,30 +45,6 @@
         &:active {
             background-color: $accent;
             border: 1px solid $accent;
-            box-shadow: 0px 0px 10px $accent;
-        }
-    }
-
-    &__home_icon {
-        position: relative;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-decoration: none;
-        font-size: 1.5em;
-        outline: none;
-        background: none;
-        border: none;
-        border-radius: 0.5rem;
-        width: 1.5em;
-        height: 1.5em;
-
-        & i {
-            pointer-events: none;
-        }
-
-        &:active {
-            background-color: $accent;
             box-shadow: 0px 0px 10px $accent;
         }
     }

@@ -4,7 +4,7 @@ import { displayHistoryMenu } from "./perfil_menu/history_menu";
 import { displaySettingsMenu } from "./perfil_menu/settings_menu";
 
 const perfilMenu = document.querySelector(".perfil_menu");
-const closeMenu = document.querySelector(".perfil_menu__close_icon");
+const closeMenu = perfilMenu.querySelector(".perfil_menu__close_icon");
 const editProfileButton = document.querySelector(".perfil_menu__button--edit_profile");
 const friendsButton = document.querySelector(".perfil_menu__button--friends");
 const historyButton = document.querySelector(".perfil_menu__button--history");
